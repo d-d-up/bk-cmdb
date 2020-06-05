@@ -57,10 +57,10 @@
 
 * 启动容器
 
-    执行如下命令，bk-cmdb容器服务即可启动。其中端口8081可以根据自已环境的实际情况进行调整，不局限于8081。
+    执行如下命令，bk-cmdb容器服务即可启动。其中端口8090:8090，要不然会因为本地没有8090的端口，在浏览器打开失败。
     ```shell
-    docker run -d -p 8081:8090 ccr.ccs.tencentyun.com/bk.io/cmdb-standalone:latest
+    docker run -d -p 8090:8090 ccr.ccs.tencentyun.com/bk.io/cmdb-standalone:latest
     ```
-    此时你可以打开浏览器，访问`http://127.0.0.1:8081`即可体验最新版的蓝鲸配置平台服务。
+    此时你可以打开浏览器，访问`http://127.0.0.1:8090`即可体验最新版的蓝鲸配置平台服务。
 
     **恭喜你，你正在体验最新的蓝鲸配置平台服务。**
